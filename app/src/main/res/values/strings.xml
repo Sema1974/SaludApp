@@ -2,4 +2,6 @@
     <string name="app_name">SaludApp</string>
     <string name="pulsa_aqui">Pulsa Aqui</string>
     <string name="pulsa">Pulsa</string>
+    <string name="jose_manuel">Jose Manuel</string>
+    <string name="escribe_tu_nombre">Escribe tu nombre</string>
 </resources>
