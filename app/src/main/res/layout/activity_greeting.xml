@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".GreetingActivity">
     
     <TextView
         android:layout_width="wrap_content"
@@ -15,7 +15,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:id="@+id/tvGreeting"
-        android:textSize="60dp"
+        android:textSize="60sp"
         android:textColor="@color/purple_200"
         tools:text="Saludos"
         />
