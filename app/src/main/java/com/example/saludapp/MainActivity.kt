@@ -15,12 +15,12 @@ import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        val etName:EditText = findViewById(R.id.etName)
-        val name = etName.text.toString()
+
 
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
         val btnHello:AppCompatButton= findViewById(R.id.btnHello)
             btnHello.setOnClickListener()
             {
@@ -29,6 +29,8 @@ class MainActivity : AppCompatActivity() {
                 if (name.isNotEmpty()){
                     Snackbar.make(btnHello, "Hello $name!", Snackbar.LENGTH_SHORT).setAnchorView(btnHello).setAction("CLOSE"){finishAffinity()}.show()
                 }*/
+                val etName:EditText = findViewById(R.id.etName)
+                val name = etName.text.toString()
                 val intentGA = Intent(this, GreetingActivity::class.java)
                 intentGA.putExtra("EXTRA_NAME", name)
                 startActivity(intentGA)
